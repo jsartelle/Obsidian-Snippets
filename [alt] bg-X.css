@@ -1,0 +1,11 @@
+/* Adds background colors to transparent images
+Usage: ![[image.jpg|bg-white]]
+*/
+
+img[alt*='bg-white'] {
+  background-color: white;
+}
+
+img[alt*='bg-black'] {
+  background-color: black;
+}

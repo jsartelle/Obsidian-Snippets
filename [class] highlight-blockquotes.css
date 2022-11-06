@@ -1,0 +1,13 @@
+/* Gives <blockquote> elements a background */
+
+.highlight-blockquotes .cm-embed-block {
+  border-radius: 10px !important;
+}
+
+.theme-light .highlight-blockquotes .cm-embed-block {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.theme-dark .highlight-blockquotes .cm-embed-block {
+  background-color: rgba(255, 255, 255, 0.1);
+}

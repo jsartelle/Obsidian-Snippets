@@ -1,0 +1,6 @@
+/* Makes previews from the Page Preview core plugin larger */
+
+body {
+	--popover-width: 600px;
+	--popover-height: 800px;
+}

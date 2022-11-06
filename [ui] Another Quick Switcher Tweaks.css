@@ -1,0 +1,37 @@
+/* Cleans up Another Quick Switcher plugin UI and hides a lot of keyboard shortcuts */
+
+.another-quick-switcher__status__search-command {
+  display: none;
+}
+
+.another-quick-switcher__status__count-input {
+  top: 1rem;
+}
+
+.prompt-instruction:nth-child(1),
+.prompt-instruction:nth-child(2),
+.prompt-instruction:nth-child(3),
+.prompt-instruction:nth-child(5),
+.prompt-instruction:nth-child(6),
+.prompt-instruction:nth-child(7),
+.prompt-instruction:nth-child(8),
+.prompt-instruction:nth-child(14),
+.prompt-instruction:nth-child(15),
+.prompt-instruction:nth-child(16),
+.prompt-instruction:nth-child(17),
+.prompt-instruction:nth-child(18),
+.prompt-instruction:nth-child(19),
+.prompt-instruction:nth-child(20),
+.prompt-instruction:nth-child(21),
+.prompt-instruction:nth-child(22) {
+  display: none;
+}
+
+/* comment above and uncomment below to see prompt numbers */
+
+/* .prompt-instruction {
+  counter-increment: prompt;
+}
+.prompt-instruction::before {
+  content: counter(prompt);
+} */

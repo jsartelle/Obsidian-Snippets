@@ -1,0 +1,13 @@
+/* Moves tab close buttons to the left side */
+
+.mod-macos .workspace-tab-header-inner-title {
+  padding-left: 3px;
+}
+
+.mod-macos
+  .workspace
+  .mod-root
+  .workspace-tab-header
+  .workspace-tab-header-inner-close-button {
+  order: -1;
+}

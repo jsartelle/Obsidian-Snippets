@@ -1,0 +1,6 @@
+/* Hides ribbon & status bar items added by the Bartender plugin */
+
+.side-dock-ribbon-action.is-collapsed,
+.status-bar-item.is-collapsed {
+  display: none !important;
+}

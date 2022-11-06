@@ -1,0 +1,10 @@
+/* Hides block IDs (^abc123) in live preview */
+
+/* Hide block IDs on inactive lines */
+.is-live-preview .cm-blockid {
+    opacity: 0;
+}
+/* Show block IDs on active lines */
+.is-live-preview .cm-active .cm-blockid {
+    opacity: 1;
+}

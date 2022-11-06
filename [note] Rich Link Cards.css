@@ -1,0 +1,38 @@
+/* Improves rendering of cards made with the Rich Links plugin */
+
+.rich-link-card-container {
+  max-width: 1000px;
+}
+
+.rich-link-card-container::after {
+  /* remove underline */
+  display: none;
+}
+
+.rich-link-card {
+  overflow: hidden;
+  border-radius: 10px !important;
+}
+
+.rich-link-card .rich-link-image-container {
+  position: relative;
+  max-width: 150px;
+  height: auto !important;
+}
+
+.rich-link-card .rich-link-image {
+  height: 100%;
+}
+
+.rich-link-card .rich-link-card-text {
+  padding: 4px 8px !important;
+}
+
+/* Live Preview */
+.cm-html-embed .rich-link-card-container {
+  white-space: normal;
+}
+
+.cm-html-embed .rich-link-card {
+  margin: 0;
+}

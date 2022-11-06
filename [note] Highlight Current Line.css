@@ -1,0 +1,9 @@
+/* Highlights the line the cursor is on */
+
+.theme-light .cm-focused .cm-active {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.theme-dark .cm-focused .cm-active {
+    background-color: rgba(255, 255, 255, 0.0);
+}

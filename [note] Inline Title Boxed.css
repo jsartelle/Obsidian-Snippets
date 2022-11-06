@@ -1,0 +1,23 @@
+/* Puts inline titles in a rounded box */
+
+.inline-title {
+  --inline-title-bg: rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  padding-top: 8px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background-color: var(--inline-title-bg);
+  text-align: center;
+  font-size: var(--font-text-size);
+  transition-duration: 0.1s;
+  transition-property: background-color, border-color;
+}
+
+.inline-title:focus {
+  border-color: var(--inline-title-bg);
+  background-color: transparent;
+}
+
+.theme-dark .inline-title {
+  --inline-title-bg: rgba(255, 255, 255, 0.1);
+}

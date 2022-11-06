@@ -1,0 +1,28 @@
+/* Makes individual notes full width */
+
+.full-width.markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer,
+.full-width.markdown-preview-view.is-readable-line-width
+  .markdown-preview-sizer,
+.full-width.markdown-source-view.mod-cm6.is-readable-line-width .cm-content,
+.full-width.markdown-source-view.mod-cm6.is-readable-line-width .cm-line {
+  max-width: 100%;
+}
+
+.full-width-tables.markdown-source-view.mod-cm6.is-readable-line-width
+  .cm-sizer,
+.full-width-tables.markdown-preview-view.is-readable-line-width
+  .markdown-preview-sizer,
+.full-width-tables.markdown-source-view.mod-cm6.is-readable-line-width
+  .cm-content,
+.full-width-tables.markdown-source-view.mod-cm6.is-readable-line-width
+  .cm-table-widget {
+  max-width: 100%;
+}
+
+.full-width-tables.markdown-source-view.mod-cm6.is-readable-line-width .cm-line,
+.full-width-tables.markdown-preview-view.is-readable-line-width
+  .markdown-preview-sizer
+  > div:not(.el-table) {
+  margin: 0 auto !important;
+  max-width: var(--file-line-width);
+}
