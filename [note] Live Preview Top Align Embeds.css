@@ -1,0 +1,5 @@
+/* Aligns embeds to the top of the line in Live Preview when editing (reduces layout shifting) */
+
+.markdown-source-view.mod-cm6 .cm-active .internal-embed {
+	vertical-align: top;
+}
