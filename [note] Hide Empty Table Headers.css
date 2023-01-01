@@ -1,5 +1,0 @@
-/* Hides empty table headers - breaks if some headers are empty & some aren't */
-
-th:empty {
-	display: none;
-}

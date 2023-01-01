@@ -1,0 +1,5 @@
+/* Hides fully blank table headers */
+
+thead:not(:has(th:not(:empty))) {
+	display: none;
+}
