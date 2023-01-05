@@ -1,0 +1,5 @@
+/* Makes tables in edit mode use a font that handles Japanese characters correctly */
+
+.HyperMD-table-row {
+	--font-monospace: 'Iosevka Curly'
+}
