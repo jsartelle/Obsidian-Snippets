@@ -1,0 +1,40 @@
+/* Limits all images & media to the specified size */
+
+.workspace-leaf-content .image-size-100 :is(img:not([width]), audio, video) {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.workspace-leaf-content .image-size-200 :is(img:not([width]), audio, video) {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.workspace-leaf-content .image-size-300 :is(img:not([width]), audio, video) {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.workspace-leaf-content .image-size-400 :is(img:not([width]), audio, video) {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+
+/* width only */
+
+.workspace-leaf-content .image-width-100 :is(img:not([width]), audio, video) {
+  max-width: 100px;
+}
+
+.workspace-leaf-content .image-width-200 :is(img:not([width]), audio, video) {
+  max-width: 200px;
+}
+
+.workspace-leaf-content .image-width-300 :is(img:not([width]), audio, video) {
+  max-width: 300px;
+}
+
+.workspace-leaf-content .image-width-400 :is(img:not([width]), audio, video) {
+  max-width: 400px;
+}

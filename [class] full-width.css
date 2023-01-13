@@ -1,28 +1,25 @@
-/* Makes individual notes full width */
+/* Makes individual notes or elements full width */
+/* Supported classes: full-width (covers everything), full-width-tables, full-width-embeds */
 
-.full-width.markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer,
-.full-width.markdown-preview-view.is-readable-line-width
-  .markdown-preview-sizer,
-.full-width.markdown-source-view.mod-cm6.is-readable-line-width .cm-content,
-.full-width.markdown-source-view.mod-cm6.is-readable-line-width .cm-line {
+[class*="full-width"].markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer,
+[class*="full-width"].markdown-source-view.mod-cm6.is-readable-line-width .cm-content,
+[class*="full-width"].markdown-source-view.mod-cm6.is-readable-line-width .cm-content > *,
+[class*="full-width"].markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
   max-width: 100%;
 }
 
-.full-width-tables.markdown-source-view.mod-cm6.is-readable-line-width
-  .cm-sizer,
-.full-width-tables.markdown-preview-view.is-readable-line-width
-  .markdown-preview-sizer,
-.full-width-tables.markdown-source-view.mod-cm6.is-readable-line-width
-  .cm-content,
-.full-width-tables.markdown-source-view.mod-cm6.is-readable-line-width
-  .cm-table-widget {
-  max-width: 100%;
-}
-
-.full-width-tables.markdown-source-view.mod-cm6.is-readable-line-width .cm-line,
-.full-width-tables.markdown-preview-view.is-readable-line-width
-  .markdown-preview-sizer
-  > div:not(.el-table) {
+[class*="full-width"]:not(.full-width).markdown-source-view.mod-cm6.is-readable-line-width .cm-content > *,
+[class*="full-width"]:not(.full-width).markdown-preview-view.is-readable-line-width .markdown-preview-sizer > * {
   margin: 0 auto !important;
   max-width: var(--file-line-width);
+}
+
+.full-width-tables.markdown-source-view.mod-cm6.is-readable-line-width .cm-content > .cm-table-widget,
+.full-width-tables.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > .el-table {
+  max-width: 100%;
+}
+
+.full-width-embeds.markdown-source-view.mod-cm6.is-readable-line-width .cm-content > .internal-embed,
+.full-width-embeds.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > [data-is-embed="true"] {
+  max-width: 100%;
 }

@@ -2,10 +2,10 @@
 Usage: ![[image.jpg|bg-white]]
 */
 
-img[alt*='bg-white'] {
+.internal-embed[alt*='bg-white'] > :first-child {
   background-color: white;
 }
 
-img[alt*='bg-black'] {
+.internal-embed[alt*='bg-black'] > :first-child {
   background-color: black;
 }
