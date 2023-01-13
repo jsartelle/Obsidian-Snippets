@@ -1,5 +1,6 @@
 /* Makes tables in edit mode use a font that handles Japanese characters correctly */
+/* Required font: https://github.com/be5invis/Iosevka */
 
 .HyperMD-table-row {
-	--font-monospace: 'Iosevka Curly'
+	font-family: 'Iosevka Curly', var(--font-monospace);
 }
