@@ -1,0 +1,12 @@
+/* Fades frontmatter block in live preview when not being edited */
+
+.is-live-preview .cm-hmd-frontmatter {
+    transition: opacity 0.25s;
+    opacity: 0.25;
+}
+
+.is-live-preview :is(.cm-active, .cm-line:hover) ~ .cm-line .cm-hmd-frontmatter, 
+.is-live-preview :is(.cm-active, .cm-line:hover) .cm-hmd-frontmatter, 
+.is-live-preview .cm-line:has(~ :is(.cm-active, .cm-line:hover) .cm-hmd-frontmatter) .cm-hmd-frontmatter {
+    opacity: 1;
+}

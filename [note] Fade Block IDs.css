@@ -1,0 +1,10 @@
+/* Fades block IDs (^abc123) on inactive lines in live preview */
+
+.is-live-preview .cm-blockid {
+    transition: opacity 0.25s;
+    opacity: 0.25;
+}
+
+.is-live-preview :is(.cm-active, .cm-line:hover) .cm-blockid {
+    opacity: 1;
+}
