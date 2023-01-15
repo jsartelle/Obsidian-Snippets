@@ -1,0 +1,5 @@
+/* Wrap long file names in the file explorer */
+
+body {
+	--nav-item-white-space: wrap;
+}
