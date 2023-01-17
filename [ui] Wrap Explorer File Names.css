@@ -3,3 +3,12 @@
 body {
 	--nav-item-white-space: wrap;
 }
+
+.nav-file-title-content {
+	display: flex;
+}
+
+.nav-file-title-content::before {
+	flex-shrink: 0;
+	display: block !important;
+}
