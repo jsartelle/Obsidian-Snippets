@@ -1,0 +1,5 @@
+/* Makes icons added by the Commander theme consistent with default icons (tested with side ribbon and explorer icons) */
+
+.side-dock-ribbon-action, .cmdr.clickable-icon {
+	color: var(--icon-color) !important;
+}
