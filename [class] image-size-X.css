@@ -1,21 +1,21 @@
-/* Limits all images & media to the specified size */
+/* Limits all images & media to the specified size (!important because some themes set their own max-width/height) */
 
 .workspace-leaf-content .image-size-100 :is(img:not([width]), audio, video) {
-  max-width: min(100px, 100%);
-  max-height: min(100px, 100%);
+  max-width: min(100px, 100%) !important;
+  max-height: min(100px, 100%) !important;
 }
 
 .workspace-leaf-content .image-size-200 :is(img:not([width]), audio, video) {
-  max-width: min(200px, 100%);
-  max-height: min(200px, 100%);
+  max-width: min(200px, 100%) !important;
+  max-height: min(200px, 100%) !important;
 }
 
 .workspace-leaf-content .image-size-300 :is(img:not([width]), audio, video) {
-  max-width: min(300px, 100%);
-  max-height: min(300px, 100%);
+  max-width: min(300px, 100%) !important;
+  max-height: min(300px, 100%) !important;
 }
 
 .workspace-leaf-content .image-size-400 :is(img:not([width]), audio, video) {
-  max-width: min(400px, 100%);
-  max-height: min(400px, 100%);
+  max-width: min(400px, 100%) !important;
+  max-height: min(400px, 100%) !important;
 }

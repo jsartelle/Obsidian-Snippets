@@ -1,6 +1,4 @@
-/* Adds background colors to transparent images
-Usage: ![[image.jpg|bg-white]]
-*/
+/* Add background colors to transparent images */
 
 .internal-embed[alt*='bg-white'] > :first-child {
   background-color: white;

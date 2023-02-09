@@ -1,0 +1,23 @@
+/* Hide extraneous elements for pinned notes in reading mode */
+
+:is(.mod-left-split, .mod-right-split) .markdown-reading-view .pinned-compact {
+	padding: 0;
+}
+
+:is(.mod-left-split, .mod-right-split) .markdown-reading-view .pinned-compact .mod-header {
+	display: none;
+}
+
+:is(.mod-left-split, .mod-right-split) .markdown-reading-view .pinned-compact .internal-query {
+	border-top: none;
+}
+
+:is(.mod-left-split, .mod-right-split) .markdown-reading-view .pinned-compact .internal-query-header {
+	display: none;
+}
+
+:is(.mod-left-split, .mod-right-split) .markdown-reading-view .pinned-compact .search-result-container {
+	max-height: none;
+	border: none;
+	border-radius: 0;
+}

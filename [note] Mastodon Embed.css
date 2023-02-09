@@ -1,0 +1,6 @@
+/* better sizing for Mastodon embeds */
+
+iframe.mastodon-embed {
+	width: 100%;
+	height: 250px;
+}

@@ -1,0 +1,6 @@
+/* Add a border around embeds */
+
+.internal-embed[alt*='border'] {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 10px;
+}

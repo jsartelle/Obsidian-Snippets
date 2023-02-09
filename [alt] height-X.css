@@ -1,0 +1,45 @@
+/* Limit the height of embeds (useful for note embeds) */
+
+.internal-embed[alt*='height-'] > .markdown-embed-content {
+  overflow-y: scroll;
+}
+
+.internal-embed[alt*='height-100'] > .markdown-embed-content {
+  max-height: 100px;
+}
+
+.internal-embed[alt*='height-200'] > .markdown-embed-content {
+  max-height: 200px;
+}
+
+.internal-embed[alt*='height-300'] > .markdown-embed-content {
+  max-height: 300px;
+}
+
+.internal-embed[alt*='height-400'] > .markdown-embed-content {
+  max-height: 400px;
+}
+
+.internal-embed[alt*='height-500'] > .markdown-embed-content {
+  max-height: 500px;
+}
+
+.internal-embed[alt*='height-600'] > .markdown-embed-content {
+  max-height: 600px;
+}
+
+.internal-embed[alt*='height-700'] > .markdown-embed-content {
+  max-height: 700px;
+}
+
+.internal-embed[alt*='height-800'] > .markdown-embed-content {
+  max-height: 800px;
+}
+
+.internal-embed[alt*='height-900'] > .markdown-embed-content {
+  max-height: 900px;
+}
+
+.internal-embed[alt*='height-1000'] > .markdown-embed-content {
+  max-height: 1000px;
+}
