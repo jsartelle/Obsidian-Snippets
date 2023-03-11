@@ -1,0 +1,31 @@
+.css-cheat-sheet .grid-example {
+  display: grid;
+}
+
+.css-cheat-sheet .grid-example > div {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  border: var(--table-border-width) solid var(--table-border-color);
+  counter-increment: grid-example;
+}
+
+.css-cheat-sheet .grid-example.number-lines > .active {
+  background-color: var(--text-selection);
+}
+
+.css-cheat-sheet .grid-example.number-lines > ::before {
+  content: counter(grid-example);
+}
+
+.css-cheat-sheet .grid-example.number-lines > :not(:first-child)::before {
+  position: relative;
+  left: -0.33em;
+}
+
+.css-cheat-sheet .grid-example.number-lines > :last-child::after {
+  content: counter(grid-example);
+  counter-increment: grid-example;
+}

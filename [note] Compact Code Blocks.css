@@ -1,0 +1,12 @@
+/* Shrink the blank lines at the start and end of code blocks (use left/right to move into these lines) */
+
+.markdown-source-view.mod-cm6
+  .cm-content
+  .HyperMD-codeblock-begin:not(.cm-active),
+.markdown-source-view.mod-cm6
+  .cm-content
+  .HyperMD-codeblock-end:not(.cm-active) {
+  height: 0.5em;
+  color: transparent !important;
+  cursor: pointer;
+}
