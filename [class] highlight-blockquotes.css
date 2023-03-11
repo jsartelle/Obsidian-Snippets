@@ -1,6 +1,0 @@
-/* Gives <blockquote> elements a background */
-
-.highlight-blockquotes .cm-embed-block {
-  border-radius: 10px !important;
-  background-color: var(--code-background);
-}
