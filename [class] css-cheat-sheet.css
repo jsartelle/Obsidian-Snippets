@@ -1,4 +1,5 @@
 .css-cheat-sheet .grid-example {
+  position: relative;
   display: grid;
 }
 
@@ -12,20 +13,29 @@
   counter-increment: grid-example;
 }
 
-.css-cheat-sheet .grid-example.number-lines > .active {
+.css-cheat-sheet .grid-example .active {
   background-color: var(--text-selection);
 }
 
-.css-cheat-sheet .grid-example.number-lines > ::before {
+/* use a span to ignore the counter */
+.css-cheat-sheet .grid-example.number-lines > div::before {
   content: counter(grid-example);
 }
 
-.css-cheat-sheet .grid-example.number-lines > :not(:first-child)::before {
+.css-cheat-sheet .grid-example.number-lines > div:not(:first-of-type)::before {
   position: relative;
   left: -0.33em;
 }
 
-.css-cheat-sheet .grid-example.number-lines > :last-child::after {
+.css-cheat-sheet .grid-example.number-lines > div:last-of-type::after {
   content: counter(grid-example);
   counter-increment: grid-example;
+}
+
+.css-cheat-sheet .grid-example > .abs-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
