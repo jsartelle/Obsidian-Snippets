@@ -1,0 +1,5 @@
+/* collapse leading space (ex. list indents) in search/query results */
+
+.search-result-file-match span:first-child {
+	white-space: normal;	
+}
