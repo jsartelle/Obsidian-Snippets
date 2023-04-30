@@ -1,0 +1,5 @@
+/* Remove the first header from embeds (useful for embedding a single header) */
+
+.markdown-embed[alt*='noheader'] div[data-heading][data-tag-name^='h'] {
+	display: none;
+}
