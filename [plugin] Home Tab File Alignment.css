@@ -1,0 +1,13 @@
+/* better styling for Home Tab plugin */
+.home-tab-starred-files-container,
+.home-tab-recent-files-wrapper {
+  align-items: stretch !important;
+}
+
+.home-tab-recent-files-title {
+  padding-bottom: 20px !important;
+}
+
+.home-tab-file-item-preview-icon {
+  padding-bottom: var(--size-4-3) !important;
+}
