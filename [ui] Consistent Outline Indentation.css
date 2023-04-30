@@ -1,6 +1,0 @@
-/* Makes sure that outline items on the same level with & without children line up */
-
-body:not(.outline-enhanced) .outline .tree-item .tree-item-self .tree-item-icon {
-  position: relative;
-  margin-left: calc(var(--size-4-4) * -1);
-}
