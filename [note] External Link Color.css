@@ -1,0 +1,5 @@
+/* Use the same color for external and internal links (meant for the Border theme) */
+
+body {
+  --link-external-color: var(--link-color);
+}
