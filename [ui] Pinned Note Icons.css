@@ -4,16 +4,16 @@
 
 /* Add a custom icon to the tab */
 .workspace-split:not(.mod-root) .workspace-tab-header[data-type="markdown"]:is([aria-label*="TODO"], [aria-label*="Art"]) .workspace-tab-header-inner-icon {
-	width: 20px;
-	height: 20px;
+	width: 18px;
+	height: 18px;
 	background-image: linear-gradient(currentColor, currentColor);
 	background-position-y: 2px;
-	background-size: 18px 18px;
+	background-size: 16px 16px;
 	background-repeat: no-repeat;
 	content: "";
 	-webkit-mask-repeat: no-repeat;
 	-webkit-mask-position: center;
-	-webkit-mask-size: 18px 18px;
+	-webkit-mask-size: 16px 16px;
 }
 
 /* Remove the pin and the native file icon */

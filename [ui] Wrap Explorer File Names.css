@@ -1,14 +1,20 @@
 /* Wrap long file names in the file explorer */
 
 body {
-	--nav-item-white-space: wrap;
+  --nav-item-white-space: wrap;
+}
+
+[data-type='git-view'] {
+  --nav-item-white-space: nowrap;
+  --nav-item-padding: var(--size-4-1) 0;
+  --nav-item-children-margin-left: var(--size-4-2);
 }
 
 .nav-file-title-content {
-	display: flex;
+  display: flex;
 }
 
 .nav-file-title-content::before {
-	flex-shrink: 0;
-	display: block !important;
+  display: block !important;
+  flex-shrink: 0;
 }

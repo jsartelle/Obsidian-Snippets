@@ -2,5 +2,5 @@
 /* Required font: https://github.com/be5invis/Iosevka */
 
 .HyperMD-table-row {
-	font-family: 'Iosevka Curly', var(--font-monospace);
+	--font-monospace: 'Iosevka Curly';
 }

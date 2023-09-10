@@ -1,7 +1,0 @@
-/* Add margin to Editing Toolbar dividers in Following Mode */
-
-:is(#cMenuToolbarModalBar, #cMenuToolbarPopoverBar) button.cMenuToolbarCommandItem.cMenuToolbar-Divider-Line {
-	--divider-margin: 5px;
-	margin-left: calc(var(--divider-margin) + 4px);
-	margin-right: var(--divider-margin);
-}

@@ -1,0 +1,29 @@
+/* Put the properties section in a rounded box */
+
+.metadata-container {
+  padding: var(--size-4-2);
+  border-radius: var(--size-2-3);
+  background-color: var(--code-background);
+}
+
+.metadata-properties-heading {
+  display: flex;
+}
+
+.metadata-properties-heading .collapse-indicator {
+  position: relative;
+  left: 0;
+  margin-left: 2px;
+  opacity: 1;
+}
+
+.metadata-properties-title {
+  position: relative;
+}
+
+.metadata-container:not([data-property-count='0'])
+  + .cm-contentContainer
+  .cm-line:not(.cm-line ~ .cm-line):has(br:first-child:last-child) {
+  /* hide the blank line below the properties section */
+  display: none;
+}

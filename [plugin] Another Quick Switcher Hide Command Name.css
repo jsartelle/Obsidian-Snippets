@@ -1,9 +1,10 @@
-/* Hide command name from Another Quick Switcher plugin UI */
+/* Hide command name and result count from Another Quick Switcher plugin UI */
 
 .another-quick-switcher__status__search-command {
   display: none;
 }
 
 .another-quick-switcher__status__count-input {
-  top: 1rem;
+  display: none;
+  /* top: 1rem; */
 }

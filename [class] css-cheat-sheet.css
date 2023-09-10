@@ -1,5 +1,20 @@
 /* Note-specific styles for CSS Grid notes */
 
+.css-cheat-sheet .outline-offset-example {
+  display: flex;
+}
+
+.css-cheat-sheet .outline-offset-example div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  width: 200px;
+  height: 100px;
+  outline: 3px dashed currentColor;
+  background-color: var(--text-selection);
+}
+
 .css-cheat-sheet .grid-example {
   position: relative;
   display: grid;

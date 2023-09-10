@@ -1,7 +1,8 @@
 /* Centers inline titles and adds a divider */
 
 .inline-title {
-  margin-bottom: var(--size-4-8);
-  border-bottom: 2px solid var(--hr-color);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: var(--size-2-1) solid var(--hr-color);
   text-align: center;
 }

@@ -1,10 +1,10 @@
 /* Puts inline titles in a rounded box */
 
 .inline-title {
-  margin-bottom: 24px;
-  padding-top: 8px;
-  border: 2px solid transparent;
-  border-radius: 6px;
+  margin-bottom: var(--size-4-6);
+  padding: var(--size-4-2);
+  border: var(--size-2-1) solid transparent !important;
+  border-radius: var(--size-2-3);
   background-color: var(--code-background);
   color: var(--code-normal);
   text-align: center;
