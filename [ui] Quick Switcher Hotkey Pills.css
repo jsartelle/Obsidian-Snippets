@@ -1,0 +1,11 @@
+/* Restyle quick switcher hotkeys */
+
+.prompt-instruction {
+  padding: 1px 5px;
+  border-radius: 8px;
+  background-color: var(--background-modifier-hover);
+}
+
+.prompt-instruction-command {
+  font-weight: normal;
+}
