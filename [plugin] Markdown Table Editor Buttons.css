@@ -1,0 +1,24 @@
+/* removes the redundant "Copy as Markdown" button above the table, and moves the buttons from below the table to above */
+
+.view-content:has(.mte.button-container) {
+	display: flex;
+	flex-flow: column;
+}
+
+.mte.grid {
+	order: 2;
+}
+
+.mte.button-container:nth-child(2) {
+	display: none;
+}
+
+.mte.button-container:last-child {
+	order: 1;
+}
+
+/* add some spacing between buttons */
+
+.mte button+button {
+	margin-left: var(--size-4-2);
+}
