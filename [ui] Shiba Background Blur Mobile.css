@@ -1,0 +1,4 @@
+/* Fixes the background blur for the Shiba Inu theme on iOS */
+.shib-workspace-background-image-toggle .workspace, .shib-workspace-background-image-toggle.shib-bg-fix .workspace {
+	-webkit-backdrop-filter: brightness(var(--shib-custom-bg-brightness,0.5)) blur(var(--shib-custom-bg-blur,5px));
+}
