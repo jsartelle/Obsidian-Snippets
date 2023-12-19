@@ -1,0 +1,9 @@
+/* highlight the active table row */
+
+.theme-light .table-editor tr:has(.cm-focused) {
+	backdrop-filter: brightness(0.95)
+}
+
+.theme-dark .table-editor tr:has(.cm-focused) {
+	backdrop-filter: brightness(1.5)
+}
