@@ -1,0 +1,21 @@
+/* Highlights the line the cursor is on */
+
+.cm-focused .cm-active::before {
+    /* if you don't use ::before the backdrop blinks with the cursor */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(0.95);
+    pointer-events: none;
+}
+
+.theme-light .cm-focused .cm-active::before {
+    backdrop-filter: brightness(0.95);
+}
+
+.theme-dark .cm-focused .cm-active::before {
+    backdrop-filter: brightness(1.5);
+}

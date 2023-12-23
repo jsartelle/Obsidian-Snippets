@@ -1,9 +1,0 @@
-/* Highlights the line the cursor is on */
-
-.theme-light .cm-focused .cm-active {
-    backdrop-filter: brightness(0.95);
-}
-
-.theme-dark .cm-focused .cm-active {
-    backdrop-filter: brightness(1.5);
-}
