@@ -1,11 +1,11 @@
+/* better icon for the Copy Inline Code plugin */
+
 .copy-to-clipboard-icon {
-  /* position: absolute; */
   background-color: var(--text-muted);
   color: transparent;
   opacity: 0.5;
   transition: 100ms ease;
   transition-property: opacity, background-color;
-  /* transform: translate(calc(-1em - 5px)); */
   -webkit-mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJzdmctaWNvbiBsdWNpZGUtY29weSI+PHJlY3QgeD0iOCIgeT0iOCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjE0IiByeD0iMiIgcnk9IjIiPjwvcmVjdD48cGF0aCBkPSJNNCAxNmMtMS4xIDAtMi0uOS0yLTJWNGMwLTEuMS45LTIgMi0yaDEwYzEuMSAwIDIgLjkgMiAyIj48L3BhdGg+PC9zdmc+');
   -webkit-mask-position: left center;
   -webkit-mask-size: 75% 75%;
@@ -22,4 +22,9 @@
 
 .copy-to-clipboard-icon:hover {
   background-color: var(--text-normal);
+}
+
+/* hide in notes with the "hide-copy-icon" class */
+.hide-copy-icon .copy-to-clipboard-icon {
+  display: none;
 }
