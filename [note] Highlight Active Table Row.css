@@ -1,9 +1,9 @@
 /* highlight the active table row */
 
 .theme-light .table-editor tr:has(.cm-focused) {
-	backdrop-filter: brightness(0.95)
+  background: rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-dark .table-editor tr:has(.cm-focused) {
-	backdrop-filter: brightness(1.5)
+  background: rgba(255, 255, 255, 0.1) !important;
 }

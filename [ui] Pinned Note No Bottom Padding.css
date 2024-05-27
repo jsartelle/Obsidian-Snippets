@@ -1,0 +1,5 @@
+/* remove bottom padding from pinned notes */
+
+:is(.mod-left-split, .mod-right-split) .markdown-preview-sizer {
+  padding-bottom: 0 !important;
+}

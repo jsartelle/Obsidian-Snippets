@@ -1,0 +1,5 @@
+/* hides folder icons in the file explorer, ex. when using Iconize plugin */
+/* NOTE: some themes replace the > with a folder icon, look for an option in that theme's Style Settings to disable that */
+.nav-folder-title-content::before {
+	display: none !important;
+}

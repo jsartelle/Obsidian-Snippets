@@ -1,12 +1,15 @@
-/* better icon for the Copy Inline Code plugin */
+/* better icon for the Copy Inline Code plugin, and hide except on hover */
 
 .copy-to-clipboard-icon {
-  background-color: var(--text-muted);
+  position: absolute;
+  display: inline-block;
+  transform: translateX(-100%);
+  background-color: var(--icon-color-active);
   color: transparent;
-  opacity: 0.5;
+  opacity: 0;
   transition: 100ms ease;
   transition-property: opacity, background-color;
-  -webkit-mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJzdmctaWNvbiBsdWNpZGUtY29weSI+PHJlY3QgeD0iOCIgeT0iOCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjE0IiByeD0iMiIgcnk9IjIiPjwvcmVjdD48cGF0aCBkPSJNNCAxNmMtMS4xIDAtMi0uOS0yLTJWNGMwLTEuMS45LTIgMi0yaDEwYzEuMSAwIDIgLjkgMiAyIj48L3BhdGg+PC9zdmc+');
+  -webkit-mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTYiIHdpZHRoPSIxNCIgdmlld0JveD0iMCAwIDQ0OCA1MTIiPjwhLS0hRm9udCBBd2Vzb21lIEZyZWUgNi41LjEgYnkgQGZvbnRhd2Vzb21lIC0gaHR0cHM6Ly9mb250YXdlc29tZS5jb20gTGljZW5zZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tL2xpY2Vuc2UvZnJlZSBDb3B5cmlnaHQgMjAyMyBGb250aWNvbnMsIEluYy4tLT48cGF0aCBkPSJNMjA4IDBIMzMyLjFjMTIuNyAwIDI0LjkgNS4xIDMzLjkgMTQuMWw2Ny45IDY3LjljOSA5IDE0LjEgMjEuMiAxNC4xIDMzLjlWMzM2YzAgMjYuNS0yMS41IDQ4LTQ4IDQ4SDIwOGMtMjYuNSAwLTQ4LTIxLjUtNDgtNDhWNDhjMC0yNi41IDIxLjUtNDggNDgtNDh6TTQ4IDEyOGg4MHY2NEg2NFY0NDhIMjU2VjQxNmg2NHY0OGMwIDI2LjUtMjEuNSA0OC00OCA0OEg0OGMtMjYuNSAwLTQ4LTIxLjUtNDgtNDhWMTc2YzAtMjYuNSAyMS41LTQ4IDQ4LTQ4eiIvPjwvc3ZnPg==');
   -webkit-mask-position: left center;
   -webkit-mask-size: 75% 75%;
   -webkit-mask-repeat: no-repeat;
@@ -17,11 +20,11 @@
     .cm-inline-code:hover ~ .copy-to-clipboard-icon ~ .copy-to-clipboard-icon
   ),
 .copy-to-clipboard-icon:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .copy-to-clipboard-icon:hover {
-  background-color: var(--text-normal);
+  opacity: 1;
 }
 
 /* hide in notes with the "hide-copy-icon" class */

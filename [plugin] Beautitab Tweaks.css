@@ -1,0 +1,102 @@
+/* Tweaks for the Beautitab plugin */
+
+.workspace-tabs .workspace-leaf-content.beautitab .view-header {
+  position: static;
+  left: 0;
+}
+
+.beautitab {
+  color: var(--text-normal) !important;
+}
+
+.beautitab-root {
+  text-shadow: none !important;
+}
+
+.beautitab-wrapper {
+  justify-content: flex-start !important;
+  overflow-y: scroll;
+}
+
+.beautitab-top {
+  display: none;
+}
+
+.beautitab-greeting {
+  opacity: 0.7;
+}
+
+.beautitab-search-wrapper {
+  margin-bottom: var(--size-4-12) !important;
+  border: var(--input-border-width) solid var(--background-modifier-border) !important;
+  border-radius: var(--radius-l) !important;
+  background: var(--background-modifier-form-field) !important;
+  box-shadow: none !important;
+  transition: box-shadow 0.15s ease-in-out, border 0.15s ease-in-out;
+  backdrop-filter: none !important;
+}
+
+.beautitab-search-wrapper:hover {
+  border-color: var(--background-modifier-border-hover) !important;
+}
+
+.beautitab-search .beautitab-icon {
+  color: var(--search-icon-color) !important;
+}
+
+.beautitab-search-text {
+  color: var(--text-faint) !important;
+
+  &::after {
+    content: '...';
+  }
+}
+
+.beautitab-recentlyedited {
+  position: relative;
+  flex-wrap: wrap;
+  align-items: stretch !important;
+  overflow: visible !important;
+  max-width: 90%;
+  width: auto !important;
+  border-radius: var(--radius-l) !important;
+  box-shadow: 0 0 0 1px var(--background-modifier-border);
+  margin-block: var(--size-4-8);
+
+  &::before {
+    position: absolute;
+    bottom: calc(100% + var(--size-4-2));
+    left: var(--size-4-2);
+  }
+
+  &:nth-child(1 of &)::before {
+    content: 'Recent Files';
+  }
+
+  &:nth-child(2 of &)::before {
+    content: 'Bookmarks';
+  }
+}
+
+.beautitab-recentlyedited-file {
+  margin: var(--size-4-2);
+  color: var(--nav-item-color) !important;
+  font-weight: var(--nav-item-weight) !important;
+
+  &:hover {
+    background: var(--nav-item-background-hover) !important;
+    box-shadow: none !important;
+    color: var(--nav-item-color-hover) !important;
+    font-weight: var(--nav-item-weight-hover) !important;
+    backdrop-filter: none !important;
+  }
+}
+
+.beautitab-recentlyedited-file-name {
+  white-space: normal;
+}
+
+.beautitab-quote {
+  padding-bottom: var(--size-4-8) !important;
+  max-width: 90%;
+}

@@ -1,0 +1,5 @@
+/* shrink pinned tab width */
+
+.workspace .mod-root .workspace-tab-header:has(.mod-pinned) {
+	max-width: calc(var(--tab-width) / 2) !important;
+}

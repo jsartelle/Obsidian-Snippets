@@ -1,0 +1,26 @@
+.database-plugin__scroll-container {
+  container: database-scroll / inline-size;
+  /* take up full note height */
+  height: 100%;
+}
+
+/* limit preview width to pane width */
+.database-plugin__markdown-preview-view {
+  max-width: calc(100cqi - 30px);
+}
+
+/* limit width of settings modal */
+.database-settings-modal,
+.modal:has(> .database-plugin__add-column-modal) {
+  max-width: var(--modal-max-width);
+}
+
+/* vertically center tags */
+.database-plugin__tags-container {
+  align-content: center;
+}
+
+/* hide pagination if there's only one page */
+.database-plugin__pagination:has(> :first-child:last-child) {
+  display: none;
+}

@@ -1,0 +1,10 @@
+/* hides headings in Live Preview and reading mode */
+/* use left/right arrow keys on the next/previous line to select a hidden heading */
+
+.hide-headings.is-live-preview .cm-line.HyperMD-header:not(.cm-active) {
+  display: none;
+}
+
+[data-mode='preview'] .hide-headings [data-heading] {
+  display: none;
+}

@@ -2,6 +2,7 @@
 
 .rich-link-card-container {
   max-width: 1000px;
+  white-space: normal;
 }
 
 .rich-link-card-container::after {
@@ -29,10 +30,7 @@
 }
 
 /* Live Preview */
-.cm-html-embed .rich-link-card-container {
-  white-space: normal;
-}
-
-.cm-html-embed .rich-link-card {
+.cm-html-embed .rich-link-card,
+.table-cell-wrapper .rich-link-card-container:only-child .rich-link-card {
   margin: 0;
 }
