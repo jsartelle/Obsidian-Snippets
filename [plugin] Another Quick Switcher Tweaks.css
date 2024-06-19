@@ -1,13 +1,14 @@
-/* Hide command name and result count from Another Quick Switcher plugin UI */
-
+/* hide the current note title at the top */
 .another-quick-switcher__custom-search__navigation-history-header {
   display: none;
 }
 
+/* hide the command title */
 .another-quick-switcher__status__search-command {
   display: none;
 }
 
+/* hide the count of results */
 .another-quick-switcher__status__count-input {
   display: none;
   /* top: 1rem; */
