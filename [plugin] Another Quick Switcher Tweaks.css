@@ -1,5 +1,9 @@
 /* Hide command name and result count from Another Quick Switcher plugin UI */
 
+.another-quick-switcher__custom-search__navigation-history-header {
+  display: none;
+}
+
 .another-quick-switcher__status__search-command {
   display: none;
 }
