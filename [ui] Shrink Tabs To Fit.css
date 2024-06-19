@@ -1,0 +1,9 @@
+/* shrink tabs to fit their title */
+.workspace .mod-root .workspace-tab-header {
+	width: fit-content;	
+	max-width: fit-content;	
+}
+
+.mod-root .workspace-tab-header-inner-title {
+	margin-right: var(--size-4-1);
+}
