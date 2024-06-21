@@ -1,4 +1,4 @@
-/* Fades frontmatter block in live preview when not being edited */
+/* Fades the properties block (when set to Source view) in live preview when not being edited */
 
 .is-live-preview .cm-hmd-frontmatter {
     transition: opacity 0.25s;

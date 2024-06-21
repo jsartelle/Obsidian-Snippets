@@ -1,0 +1,14 @@
+/* Put backlinks in editor in a rounded box */
+.markdown-source-view {
+  .embedded-backlinks {
+    padding: var(--size-4-2);
+    min-height: 0 !important;
+    border-top: none;
+    border-radius: var(--size-2-3);
+    background-color: var(--code-background);
+
+    .nav-header {
+      padding: 0;
+    }
+  }
+}

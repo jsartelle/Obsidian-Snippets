@@ -1,0 +1,8 @@
+/* moves the Properties panel to the bottom of the note */
+.markdown-source-view.show-properties .metadata-container {
+	order: 1;
+}
+/* keep backlinks after properties */
+.markdown-source-view .embedded-backlinks {
+	order: 2;
+}
