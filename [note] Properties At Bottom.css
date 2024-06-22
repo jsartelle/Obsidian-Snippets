@@ -1,8 +1,10 @@
 /* moves the Properties panel to the bottom of the note */
 .markdown-source-view.show-properties .metadata-container {
-	order: 1;
+  order: 1;
+  -webkit-margin-after: var(--p-spacing) !important;
+  margin-block-end: var(--p-spacing) !important;
 }
 /* keep backlinks after properties */
 .markdown-source-view .embedded-backlinks {
-	order: 2;
+  order: 2;
 }
