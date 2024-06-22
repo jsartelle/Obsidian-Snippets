@@ -1,0 +1,5 @@
+/* Allow queries and embeds to take up their full height instead of scrolling */
+.full-height-queries .cm-embed-block .internal-query .search-result-container,
+.full-height-embeds .inline-embed .markdown-embed-content {
+	max-height: none;
+}
