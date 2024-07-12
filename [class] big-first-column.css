@@ -1,0 +1,5 @@
+/* make the first column of first table big */
+
+.big-first-column :nth-child(1 of .cm-table-widget) tbody td:first-child {
+	font-size: 2em;
+}

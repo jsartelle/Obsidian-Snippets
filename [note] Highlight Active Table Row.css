@@ -1,4 +1,4 @@
-/* highlight the active table row */
+/* highlight the active row in the table editor */
 
 .theme-light .table-editor tr:has(.cm-focused) {
   background: rgba(0, 0, 0, 0.05) !important;

@@ -1,4 +1,4 @@
-/* Remove the first header from embeds (useful for embedding a single header) */
+/* Remove the first header from embeds (useful for embedding a single section of a note) */
 
 .markdown-embed[alt*='noheader'] div[data-heading][data-tag-name^='h'] {
 	display: none;

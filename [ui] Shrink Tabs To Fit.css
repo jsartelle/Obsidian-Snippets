@@ -2,6 +2,7 @@
 .workspace .mod-root .workspace-tab-header {
 	width: fit-content;	
 	max-width: fit-content;	
+	min-width: calc(var(--tab-width) / 2);
 }
 
 .mod-root .workspace-tab-header-inner-title {

@@ -5,7 +5,3 @@
   border-radius: 8px;
   background-color: var(--background-modifier-hover);
 }
-
-.prompt-instruction-command {
-  font-weight: normal;
-}

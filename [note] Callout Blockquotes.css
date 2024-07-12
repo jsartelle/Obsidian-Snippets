@@ -1,15 +1,20 @@
-/* Gives <blockquote> elements (ex. for Twitter embeds) a similar style to quote callouts */
+/* Style <blockquote> elements (ex. for Twitter embeds) similar to quote callouts */
 
-.cm-embed-block:has(blockquote) {
+blockquote {
   --callout-color: var(--callout-quote);
+  margin: 0;
+  padding: var(--callout-padding);
+  @container style(--callout-padding: 0) {
+    padding: var(--callout-content-padding);
+  }
   border-width: var(--callout-border-width);
   border-style: solid;
   border-color: rgba(var(--callout-color), var(--callout-border-opacity));
   border-radius: var(--callout-radius);
   background-color: rgba(var(--callout-color), 0.1);
   mix-blend-mode: var(--callout-blend-mode);
-}
 
-blockquote.twitter-tweet {
-  margin: var(--callout-padding);
+  & p:first-child {
+    margin-block-start: 0;
+  }
 }

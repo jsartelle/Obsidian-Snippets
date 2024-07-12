@@ -1,0 +1,28 @@
+/* Move tab close buttons to the left, make them float and only show on hover */
+.workspace
+  .mod-root
+  .workspace-tab-header
+  .workspace-tab-header-inner-close-button {
+  position: absolute;
+  display: none;
+  order: -1;
+  inset-inline-start: 8px;
+  inset-inline-end: auto;
+}
+
+.workspace
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header:not(:has(.mod-pinned)):hover
+  .workspace-tab-header-inner-title {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent var(--icon-size),
+    white
+  );
+  mask-image: linear-gradient(to right, transparent var(--icon-size), white);
+}
+
+.workspace .mod-root .workspace-tab-header-inner-title {
+  text-align: center;
+}

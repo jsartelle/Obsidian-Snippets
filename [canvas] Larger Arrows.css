@@ -1,5 +1,0 @@
-/* makes arrows between canvas nodes larger */
-
-.canvas-edges polyline.canvas-path-end {
-	transform: scale(calc(var(--zoom-multiplier) * 1.5));
-}

@@ -29,8 +29,9 @@
   padding: 4px 8px !important;
 }
 
-/* Live Preview */
+/* compensate for margins not collapsing in Live Preview */
 .cm-html-embed .rich-link-card,
-.table-cell-wrapper .rich-link-card-container:only-child .rich-link-card {
-  margin: 0;
+/* remove margins when only child of a table cell */
+:is(td, .table-cell-wrapper) .rich-link-card-container:only-child .rich-link-card {
+  margin-block: 0;
 }
