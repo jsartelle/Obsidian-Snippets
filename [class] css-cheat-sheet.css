@@ -1,4 +1,4 @@
-/* Note-specific styles for CSS Grid notes */
+/* styles for my CSS Cheat Sheet */
 
 .css-cheat-sheet .outline-offset-example {
   display: flex;
@@ -6,35 +6,83 @@
 
 .css-cheat-sheet .outline-offset-example div {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin: 15px;
-  width: 200px;
-  height: 100px;
   outline: 3px dashed currentColor;
   background-color: var(--text-selection);
+  width: 200px;
+  height: 100px;
+}
+
+.css-cheat-sheet .zoom-example-container {
+  margin: 25px;
+  border: 2px solid currentColor;
+  overflow: visible;
+}
+
+.css-cheat-sheet .zoom-example {
+  display: inline flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-selection);
+  width: 50px;
+  height: 50px;
 }
 
 .css-cheat-sheet .grid-example {
-  position: relative;
   display: grid;
+  position: relative;
 }
 
-.css-cheat-sheet .grid-example > div {
+.css-cheat-sheet .grid-example div {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  height: 50px;
-  border: var(--table-border-width) solid var(--table-border-color);
   counter-increment: grid-example;
+  border: var(--table-border-width) solid var(--table-border-color);
+  height: auto;
+  min-height: 50px;
+  text-align: center;
 }
 
 .css-cheat-sheet .grid-example .active {
   background-color: var(--text-selection);
 }
 
+.css-cheat-sheet .grid-example.named-lines {
+  grid-template-columns:
+    [sidebar-start] 200px
+    [sidebar-end article-start] 1fr [article-end];
+}
+
+.css-cheat-sheet .grid-example.named-lines > div {
+  justify-content: space-between;
+}
+
+.css-cheat-sheet .grid-example.grid-areas {
+  grid-template-rows: repeat(3, 50px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'a a a'
+    'b c c'
+    'b c c';
+}
+
+.css-cheat-sheet .grid-example.grid-areas.empty-space {
+  grid-template-areas:
+    '. a a'
+    'b c c'
+    'b c c';
+}
+
 /* use a span to ignore the counter */
+.css-cheat-sheet .grid-example.number-lines > div {
+  justify-content: space-between;
+  z-index: 1;
+}
+
 .css-cheat-sheet .grid-example.number-lines > div::before {
   content: counter(grid-example);
 }
@@ -45,8 +93,8 @@
 }
 
 .css-cheat-sheet .grid-example.number-lines > div:last-of-type::after {
-  content: counter(grid-example);
   counter-increment: grid-example;
+  content: counter(grid-example);
 }
 
 .css-cheat-sheet .grid-example > .abs-fill {
