@@ -1,5 +1,6 @@
 /* make the first column of first table big */
 
-.big-first-column :nth-child(1 of .cm-table-widget) tbody td:first-child {
+/* uncomment middle part to apply only to first table in the note */
+.big-first-column /* :nth-child(1 of .cm-table-widget) */ tbody td:first-child {
 	font-size: 2em;
 }
