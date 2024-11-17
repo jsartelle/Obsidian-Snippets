@@ -1,0 +1,4 @@
+/* enlarge <rt> elements when hovering the parent <ruby> */
+ruby:hover rt {
+	font-size: inherit;
+}

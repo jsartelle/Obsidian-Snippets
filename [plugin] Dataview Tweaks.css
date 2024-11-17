@@ -1,0 +1,30 @@
+/* make Dataview tables match regular tables */
+table.dataview.table-view-table :is(th, td) {
+  border: var(--table-border-width) solid var(--table-border-color);
+}
+table.dataview.table-view-table th {
+  padding: var(--size-2-2) var(--size-4-2) !important;
+  font-weight: var(--table-header-weight);
+  font-size: var(--table-header-size);
+}
+
+/* hide bullets in Dataview lists and style list items like tags */
+ul.dataview-result-list-ul {
+  list-style-type: none;
+
+  li {
+    margin-inline-start: 0 !important;
+
+    span {
+      /* prevents tags from overlapping */
+      display: inline-block;
+      border: var(--tag-border-width) solid var(--tag-border-color);
+      border-radius: var(--tag-radius);
+      background-color: var(--tag-background);
+      padding-inline: var(--tag-padding-x);
+      padding-block: var(--tag-padding-y);
+      color: var(--tag-color);
+      font-weight: var(--tag-weight);
+    }
+  }
+}

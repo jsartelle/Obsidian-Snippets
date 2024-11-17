@@ -1,0 +1,8 @@
+/* Float images */
+.internal-embed[alt*='float-left'] {
+  float: left;
+}
+
+.internal-embed[alt*='float-right'] {
+  float: right;
+}

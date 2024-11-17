@@ -1,0 +1,4 @@
+/* Fix broken font in Text Finder results count */
+.finder-act .nya-tip {
+	font-family: inherit !important;
+}
