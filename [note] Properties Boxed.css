@@ -1,4 +1,5 @@
 /* Put the properties in editor in a rounded box */
+/* FIXME breaks Japanese text entry in tables */
 
 .markdown-source-view {
   .metadata-container {
